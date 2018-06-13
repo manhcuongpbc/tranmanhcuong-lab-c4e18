@@ -1,15 +1,10 @@
 # Learn how to get the current hour of your computer
 from datetime import datetime
-time = str(datetime.now())
+time = datetime.now().minute
 print(time)
-
 while True:
-    from datetime import datetime
-    time = str(datetime.now())
-    
-    # print(time[11:13],time[14:16])
 
-    if time[11:13] == '07' and time[14:16] == '00':
+    if datetime.now().hour == 13 and datetime.now().minute == 42:
         from gmail import GMail, Message
         import random
         gmail = GMail('CuongCaoCa<manhcuongpbc3@gmail.com>','159357456258')
@@ -24,7 +19,6 @@ while True:
         <p style="text-align: left;">&nbsp;</p>
         <p><span style="text-decoration: line-through;">Cường super đz</span></p>
         """
-
         #placeholder
 
         reasons = ['Bị ốm', 'gia đình có việc', 'bạn gái có bầu', 'em trai thi đh']
